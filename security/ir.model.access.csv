@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_method_sale_price_readonly_method_sale_price_readonly,method_sale_price_readonly.method_sale_price_readonly,model_method_sale_price_readonly_method_sale_price_readonly,,1,0,0,0

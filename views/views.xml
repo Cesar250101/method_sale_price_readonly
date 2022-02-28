@@ -1,0 +1,19 @@
+<odoo>
+  <data>
+      <!-- model.name inherit form view -->
+      <record id="method_sale_price_readonly.sale_orderview_id" model="ir.ui.view">
+        <field name="name">method.sale_price.readonly.sale.orderview.id</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form"/>
+        <field name="arch" type="xml">
+          <xpath expr="//field[@name='order_line']/tree/field[@name='price_unit']" position="before">
+            <field name="price_unit_readonly"/>
+          </xpath>          
+          <xpath expr="//field[@name='order_line']/tree/field[@name='price_unit']" position="attributes">
+            <attribute name="attrs">{'invisible':1}</attribute>
+          </xpath>          
+
+        </field>
+      </record>
+  </data>
+</odoo>
